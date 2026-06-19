@@ -1,0 +1,22 @@
+def main():
+    print("Function definig Practise")
+    
+def calculate(a,b):
+     a = (input("Enter a value for a: "))
+     b = (input("Enter the value for b: "))
+     c = int(a)+int(b)
+     return c
+d= calculate(a="",b="")
+print(d)
+
+def hello():
+    name = input("What's your name: ").title()
+    age  = input("Enter your age: ")
+    greet = f"Hello, {name} so you are {age} old"
+    return greet
+greeting = hello()
+print(greeting)
+
+main()
+
+

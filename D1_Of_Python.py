@@ -68,7 +68,7 @@ list_3 = ["Amazon",123,5.21,False]
 # Uses key value pair 
 data = { "name": "Jake", "age": 22 }
 print(data)
-data["age"] = "Jack" #updating the  dictionary
+data["name"] = "Jack" #updating the  dictionary
 data["salary"] = 45000 # Adding to dictionary
 del data["age"] # Removing data form the table
 print(data)

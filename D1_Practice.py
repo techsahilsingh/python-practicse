@@ -27,6 +27,6 @@
 # city_no = "23. "
 # print(f"City {city_name} , length of city name {len(city_name)} , data type format of stored value{type(city_name)},{city_no + city_name}")
 
-city = input().title()
-city_name = city.strip()
-print(city_name)
+# city = input().title()
+# city_name = city.strip()
+# print(city_name)

@@ -1,22 +1,21 @@
 def main():
     print("Function definig Practise")
+    d= calculate()
+    print(d)
+    # data= hello()
+    # print(data)
     
-def calculate(a,b):
-     a = (input("Enter a value for a: "))
-     b = (input("Enter the value for b: "))
-     c = int(a)+int(b)
+def calculate(a="23.65",b="45.66"):
+    #  a = (input("Enter a value for a: "))
+    #  b = (input("Enter the value for b: "))
+     c = float(a)+float(b)
      return c
-d= calculate(a="",b="")
-print(d)
 
-def hello():
-    name = input("What's your name: ").title()
-    age  = input("Enter your age: ")
-    greet = f"Hello, {name} so you are {age} old"
-    return greet
-greeting = hello()
-print(greeting)
-
+# def hello(name="",age=""):
+#     name = input("What's your name: ").title()
+#     age  = input("Enter your age: ")
+#     greet = f"Hello, {name} so you are {age} years old"
+#     return greet
 main()
 
 

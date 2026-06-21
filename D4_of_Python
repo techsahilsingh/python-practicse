@@ -1,0 +1,68 @@
+
+number = int(input("Enter The Number of whichs table you wnat: "))
+for i in range(1,11):
+    table = number*i
+    print(f"The multipication table of \n {number}x{i}={table}")
+
+num = int(input("Enter a number: "))
+total = sum(range(1,num+1))
+print(total)
+
+num = []
+for i in range(5):
+    take_values = int(input("Enter 5 no: "))
+    num.append(take_values)
+for i in num:
+    if i%2 == 0 :
+        print(f"Even numbers are {i}")
+
+num = int(input("Enter an number: "))
+
+while num%2 ==0:
+    print("Even")
+    break
+else:
+    print("Odd")
+
+for i in range(1,51):
+    if i%2 !=0:
+        print(f"Odd numbers are {i}")
+
+
+def main():
+
+    """Marks grader"""
+    def Student_input():
+        name = input("Enter your name: ")
+        marks = []
+        for _ in range(5):
+            enter_marks = int(input("Subject 1: \n Subject 2: \n Subject 3: \nSubject 4: \n Subject 5: \n"))
+            marks.append(enter_marks)
+        Total_marks = sum(marks)
+        avg = Total_marks/len(marks)
+        return Total_marks,name,avg
+    
+    def pass_or_fail(avg):
+        
+        if avg >= 90:
+            print("Grade A")
+        elif avg >= 80:
+            print("Grade B")
+        elif avg >= 70:
+            print("Grade C")
+        elif avg >= 40:
+            print("Pass")
+        else:
+            print("Fail")
+        
+    name,Total_marks,avg = Student_input()
+    print(f"Name Of the Student: {name} ")
+    print(f"Total marks of Student: {Total_marks}")
+    print(f"Average marks : {avg}")
+    pass_or_fail(avg)
+    
+main()
+
+
+        
+

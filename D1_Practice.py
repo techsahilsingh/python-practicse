@@ -30,3 +30,26 @@
 # city = input().title()
 # city_name = city.strip()
 # print(city_name)
+
+
+# d = 10.23
+# c = int(d)
+# print(c)
+
+# n = int(input())
+
+# print(abs(n%10))
+
+# p = int(input())
+# r = int(input())
+# t = int(input())
+
+# print(p*r*t/100)
+
+x=[1,2,3]
+y=x
+
+x = x+[4]
+y.append(5)
+print(x)
+print(y)

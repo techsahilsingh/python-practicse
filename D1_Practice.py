@@ -46,10 +46,16 @@
 
 # print(p*r*t/100)
 
-x=[1,2,3]
-y=x
+# x=[1,2,3]
+# y=x
 
-x = x+[4]
-y.append(5)
-print(x)
-print(y)
+# x = x+[4]
+# y.append(5)
+# print(x)
+# print(y)
+
+
+n = int(input("Enter the no of whose factor you want: "))
+for i in range(1,n+1):
+    if n%i==0  :
+        print(f"facotrs:{i}",end="\n")

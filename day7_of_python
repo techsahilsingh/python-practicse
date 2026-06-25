@@ -1,52 +1,52 @@
 import random
 import statistics
 
-# while True:
-#     try:
-#         no_of_questions = int(input("Enter the amt of questions you want ot solve: "))
-#         for i in range(no_of_questions):
-#             n1 = random.randint(1,100)
-#             n2 = random.randint(1,100)
-#             op_list = ["+","-","*","/"]
-#             op = random.choice(op_list)
-#             question = int(input(f"What is {n1}{op}{n2}= "))
-#             if op =="+":
-#                 correct = n1+n2
-#                 if question == correct:
-#                     print("Correct answer")
-#                 else:
-#                     print("Incorrect")
-#             elif op =="*":
-#                 correct = n1*n2
-#                 if question == correct:
-#                     print("Correct answer")
-#                 else:
-#                     print("Incorrect")
-#             elif op =="-":
-#                 correct = n1-n2
-#                 if question == correct:
-#                     print("Correct answer")
-#                 else:
-#                     print("Incorrect")
-#             elif op =="/":
-#                 correct = round(n1/n2)
-#                 if question == correct:
-#                     print("Correct answer")
-#                 else:
-#                     print("Incorrect")
-#     except ValueError:
-#         print("only integers are allowed")
-#     break
+while True:
+    try:
+        no_of_questions = int(input("Enter the amt of questions you want ot solve: "))
+        for i in range(no_of_questions):
+            n1 = random.randint(1,100)
+            n2 = random.randint(1,100)
+            op_list = ["+","-","*","/"]
+            op = random.choice(op_list)
+            question = int(input(f"What is {n1}{op}{n2}= "))
+            if op =="+":
+                correct = n1+n2
+                if question == correct:
+                    print("Correct answer")
+                else:
+                    print("Incorrect")
+            elif op =="*":
+                correct = n1*n2
+                if question == correct:
+                    print("Correct answer")
+                else:
+                    print("Incorrect")
+            elif op =="-":
+                correct = n1-n2
+                if question == correct:
+                    print("Correct answer")
+                else:
+                    print("Incorrect")
+            elif op =="/":
+                correct = round(n1/n2)
+                if question == correct:
+                    print("Correct answer")
+                else:
+                    print("Incorrect")
+    except ValueError:
+        print("only integers are allowed")
+    break
 
-# try:
-#     sc1 = random.randint(1,100)
-#     sc2 = random.randint(1,100)
-#     sc3 = random.randint(1,100)
-#     sc4 = random.randint(1,100)
-#     mean =statistics.mean([sc1,sc2,sc3,sc4])
-#     print(mean)
-# except  ValueError:
-#     print("error")
+try:
+    sc1 = random.randint(1,100)
+    sc2 = random.randint(1,100)
+    sc3 = random.randint(1,100)
+    sc4 = random.randint(1,100)
+    mean =statistics.mean([sc1,sc2,sc3,sc4])
+    print(mean)
+except  ValueError:
+    print("error")
 
 for i in range(5):
     print("h")

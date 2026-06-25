@@ -1,32 +1,47 @@
 import random
 import string
-
-# no_rounds = int(input("Enter the number of rounds you want to play"))
-# score = 0
-# draw = 0
-# computer_wins = 0
-# for i in range(no_rounds):
-#     print("Rock |Paper| Scissor Game")
-#     n = ["rock","paper","scissor"]
-#     s = random.choice(n)
-#     a = input("Enter your guess : ")
-#     if a.lower() == s:
-#         draw+=1
-#         print("Draw")
-#     elif s =="Rock" and a.lower()=="scissor"|s=="scissor" and a.lower()=="paper"|s=="paper"and a.lower()=="rock":
-#         computer_wins+=1
-#         print("you lose")
-#     else:
-#         score+= 1
-#         print("you won")
-# print(f" your score: {score}\n computer score: {computer_wins} \n Draws:{draw}")
-
+#Rock paper scissor Game
+no_rounds = int(input("Enter the number of rounds you want to play"))
+score = 0
+draw = 0
+computer_wins = 0
+for i in range(no_rounds):
+    print("Rock |Paper| Scissor Game")
+    n = ["rock","paper","scissor"]
+    s = random.choice(n)
+    a = input("Enter your guess : ")
+    if a.lower() == s:
+        draw+=1
+        print("Draw")
+    elif s =="Rock" and a.lower()=="scissor"|s=="scissor" and a.lower()=="paper"|s=="paper"and a.lower()=="rock":
+        computer_wins+=1
+        print("you lose")
+    else:
+        score+= 1
+        print("you won")
+print(f" your score: {score}\n computer score: {computer_wins} \n Draws:{draw}")
+#Password generator
 alphabets = list(string.ascii_letters)
 numbers = random.randint(0,100)
-symbols =['#', '@', '$', '&', '^', '|', '~']
+symbols =['#', '@', '$', '&', '~']
+alpha_num = str(numbers)
 password =[]
-n = int(input("Enter the length of your password: "))    
-
+n = int(input("Enter the length of your password: ")) 
+for _ in range(n):
+    for i in range(len(alphabets)):
+        alpha = random.choice(alphabets)
+        password.append(alpha) 
+    for j in range(len(alpha_num)):
+        num = alpha_num
+        password.append(num)
+    for k in range(len(symbols)):
+        symb = random.choice(symbols)
+        password.append(symb)
+    break
+random.shuffle(password)
+new_gen_pass=[str(i) for i in password]
+joint_pass = "".join(new_gen_pass)
+print(joint_pass[:n])
 
 
 

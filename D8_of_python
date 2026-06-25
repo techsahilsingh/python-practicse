@@ -1,2 +1,33 @@
+import random
+import string
+
+# no_rounds = int(input("Enter the number of rounds you want to play"))
+# score = 0
+# draw = 0
+# computer_wins = 0
+# for i in range(no_rounds):
+#     print("Rock |Paper| Scissor Game")
+#     n = ["rock","paper","scissor"]
+#     s = random.choice(n)
+#     a = input("Enter your guess : ")
+#     if a.lower() == s:
+#         draw+=1
+#         print("Draw")
+#     elif s =="Rock" and a.lower()=="scissor"|s=="scissor" and a.lower()=="paper"|s=="paper"and a.lower()=="rock":
+#         computer_wins+=1
+#         print("you lose")
+#     else:
+#         score+= 1
+#         print("you won")
+# print(f" your score: {score}\n computer score: {computer_wins} \n Draws:{draw}")
+
+alphabets = list(string.ascii_letters)
+numbers = random.randint(0,100)
+symbols =['#', '@', '$', '&', '^', '|', '~']
+password =[]
+n = int(input("Enter the length of your password: "))    
+
+
+
 
    

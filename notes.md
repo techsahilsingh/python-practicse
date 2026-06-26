@@ -1,10 +1,11 @@
 #Date:27/06/2026
 #Notes
 
-An dictionary can be empety it does't matter . you can append a dictionary if its inside a list 
+An dictionary can be empety it does't matter . you can append a dictionary if its inside a list and an empty lis and dictionary acn be appended
 it can be used to create login,register function 
 for eg
-store_data = {"data":[]}
+###########################################################################################################################################
+#store_data = {"data":[]}
 while True:
     username = input("Enter your username: ")
     password = input("Enter your password: ")

@@ -4,4 +4,6 @@ Documenting my Python learning journey as I work toward becoming an AI/ML Engine
 
 ## Courses Following
 - NPTEL Joy of Computing using Python (IIT Ropar)
-- Kaggle Python
+- Edx Havard introduction to programming with python
+
+ ##
